@@ -67,8 +67,8 @@ public class NodeGraphic extends PlayFieldGraphic {
 	 */
 	private void drawHost(Graphics2D g2) {
 		Coord loc = node.getLocation();
-
-		if (drawCoverage && node.isRadioActive()) {
+//Sahil: code responsible for drawing green circle
+/*		if (drawCoverage && node.isRadioActive()) {
 			ArrayList<NetworkInterface> interfaces = 
 				new ArrayList<NetworkInterface>();
 			interfaces.addAll(node.getInterfaces());
@@ -85,7 +85,7 @@ public class NodeGraphic extends PlayFieldGraphic {
 				g2.draw(coverage);
 			}
 		}
-
+*/
 		if (drawConnections) {
 			g2.setColor(conColor);
 			Coord c1 = node.getLocation();
