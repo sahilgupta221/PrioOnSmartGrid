@@ -33,7 +33,7 @@ public class DTNHost implements Comparable<DTNHost> {
 	private List<MovementListener> movListeners;
 	private List<NetworkInterface> net;
 	private ModuleCommunicationBus comBus;
-        public String groupId;//Sahil: capturing the groupId
+        public String groupId;//Sahil: capturing the groupId: Nice feature
 
 	static {
 		DTNSim.registerForReset(DTNHost.class.getCanonicalName());
